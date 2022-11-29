@@ -6,10 +6,11 @@
     <title>Mon mini-blog</title>
 </head>
 <body>
+
 <h1>Nos articles</h1>
 <ul>
     @foreach($articles as $article)
-        <li>{{$article['title']}}</li>
+        <li>{{$article['title'] }}</li>
     @endforeach
 </ul>
 </body>
