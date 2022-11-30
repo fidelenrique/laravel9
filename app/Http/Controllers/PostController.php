@@ -13,9 +13,9 @@ class PostController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show(Post $post)
     {
-        $post = Post::findOrFail($id);
+        // la definition de findOrfail va s'effectuer automatiquement
         return view('article', [
             'article' => $post
         ]);
